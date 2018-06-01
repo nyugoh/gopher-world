@@ -9,6 +9,7 @@ type Person struct {
 func (p *Person) introduce()  {
   fmt.Printf("Hello everyone my name is %s \n", p.Name)
 }
+
 type Student struct {
   *Person
   GPA float64
