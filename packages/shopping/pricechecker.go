@@ -3,11 +3,11 @@ package shopping
 import "Tuts/packages/shopping/db"
 
 func PriceCheck(itemId int) (float64, bool) {
-  item := db.LoadItem(itemId)
+	item := db.LoadItem(itemId)
 
-  if item == nil {
-    return 0, false
-  }
+	if item == nil {
+		return 0, false
+	}
 
-  return item.Price, true
+	return item.Price, true
 }
