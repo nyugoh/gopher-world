@@ -34,9 +34,6 @@ func AddStock() {
 		 if option == 0 {
 			 break;
 		 }
-		 if option == 1 {
-			 continue
-		 }
 		 var (
 			 name string
 			 price float64
@@ -56,6 +53,9 @@ func AddStock() {
 
 		 fmt.Println("\nOptions 0: Back 1: Add other")
 		 fmt.Scanf("%d", &option)
+		 if option == 1 {
+			 continue
+		 }
 	 }
 }
 
