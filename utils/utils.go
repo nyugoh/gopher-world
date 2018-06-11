@@ -19,8 +19,7 @@ func MainMenu()  {
 	fmt.Println("4. Checkout/ Get cart status")
 	fmt.Println("5. Pay")
 	fmt.Println("6. Print receipt")
-	fmt.Println("0. Display menu")
 	fmt.Println("q - quit the application")
 	fmt.Println("|___________________ END ____________|")
-	fmt.Printf("Select ==> ")
+	fmt.Printf("\nSelect ==> ")
 }

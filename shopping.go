@@ -12,21 +12,24 @@ var (
 )
 func main() {
 	utils.WelcomeMessage()
-	utils.MainMenu()
-	fmt.Scan(&menuOption)
-	setOption(menuOption)
+	for {
+		utils.MainMenu()
+		fmt.Scan(&menuOption)
+		if menuOption == "q" {
+			break
+		} else {
+			setOption(menuOption)
+		}
+	}
 }
 
 func setOption(s string)  {
 	i, _ := strconv.Atoi(s)
 	switch i {
-	case 0:
-		//exit app
-		fmt.Println("Exiting app ...")
 	case 1:
-		// Add items to store
-		store.AddStock()
-		fmt.Println(store.Stock)
+		store.AddStock()// Add items to store
+	case 2:
+		store.ListStock() // List all items
 	default:
 		fmt.Println("No option selected")
 	}
