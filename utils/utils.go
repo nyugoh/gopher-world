@@ -9,7 +9,7 @@ func WelcomeMessage() {
 	fmt.Printf("*****************************************************\n\n\n")
 }
 
-func MainMenu()  {
+func MainMenu() {
 	fmt.Println("|------------------ MENU -------------|")
 	fmt.Println("              Main Menu")
 	fmt.Println("Use the options below to navigate")

@@ -4,9 +4,9 @@ import "fmt"
 
 // Item properties
 type Item struct {
-	Name string
+	Name  string
 	Price float64
-	Code string
+	Code  string
 }
 
 // Specific item
@@ -28,38 +28,36 @@ func init() {
 
 func AddStock() {
 	option := 1
-	fmt.Println("\nOptions 0: Back 1: Add other")
-	fmt.Scanf("%d", &option)
-	 for {
-		 if option == 0 {
-			 break;
-		 }
-		 var (
-			 name string
-			 price float64
-			 code string
-		 )
-		 fmt.Println("\n*****************")
-		 fmt.Println("   Adding item")
-		 fmt.Println("*****************")
-		 fmt.Printf("Enter item name ==>")
-		 fmt.Scanf("%s", &name)
-		 fmt.Printf("\nEnter item code ==>")
-		 fmt.Scanf("%s", &code)
-		 fmt.Printf("\nEnter item price ==>")
-		 fmt.Scanf("%f", &price)
+	for {
+		if option == 0 {
+			break
+		}
+		var (
+			name  string
+			price float64
+			code  string
+		)
+		fmt.Println("\n*****************")
+		fmt.Println("   Adding item")
+		fmt.Println("*****************")
+		fmt.Printf("Enter item name ==>")
+		fmt.Scanf("%s", &name)
+		fmt.Printf("\nEnter item code ==>")
+		fmt.Scanf("%s", &code)
+		fmt.Printf("\nEnter item price ==>")
+		fmt.Scanf("%f", &price)
 
-		 addToStore(&Item{name, price, code})
+		addToStore(&Item{name, price, code})
 
-		 fmt.Println("\nOptions 0: Back 1: Add other")
-		 fmt.Scanf("%d", &option)
-		 if option == 1 {
-			 continue
-		 }
-	 }
+		fmt.Println("\nOptions 0: Back 1: Add other")
+		fmt.Scanf("%d", &option)
+		if option == 1 {
+			continue
+		}
+	}
 }
 
-func addToStore(newItem *Item)  {
+func addToStore(newItem *Item) {
 	item := make(storeItem)
 	item[newItem.Code] = *newItem
 	stockItems := make([]storeItem, 0)
@@ -72,7 +70,7 @@ func addToStore(newItem *Item)  {
 	}
 }
 
-func ListStock()  {
+func ListStock() {
 	fmt.Println("\n\n\t******** Store items *********")
 	fmt.Println("\n\t--------------------------------")
 	fmt.Println("\t| # |   Name   | Code | Price  |")
