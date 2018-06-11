@@ -1,9 +1,10 @@
 package main
 
 import (
-	utils "github.com/nyugoh/go-shopping-cli/utils"
+	"github.com/nyugoh/go-shopping-cli/utils"
 	"fmt"
 	"strconv"
+	"github.com/nyugoh/go-shopping-cli/store"
 )
 
 var (
@@ -23,8 +24,9 @@ func setOption(s string)  {
 		//exit app
 		fmt.Println("Exiting app ...")
 	case 1:
-		//cal
-		fmt.Println("selected 1")
+		// Add items to store
+		store.AddStock()
+		fmt.Println(store.Stock)
 	default:
 		fmt.Println("No option selected")
 	}
