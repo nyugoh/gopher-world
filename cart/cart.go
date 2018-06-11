@@ -3,8 +3,8 @@ package cart
 import "fmt"
 
 type CartItem struct {
-	Qty int
-	Name string
+	Qty   int
+	Name  string
 	Price float64
 }
 
@@ -18,20 +18,27 @@ var (
 )
 
 func AddItem(newItem *CartItem) {
-	if len(ShoppingCart.Items) == 0 {
-		ShoppingCart.Items = append(ShoppingCart.Items, *newItem)
-	} else {
-		for idx, item := range ShoppingCart.Items {
-			if item.Name == item.Name {
-				ShoppingCart.Items[idx].Qty += newItem.Qty // Increment qty
-			} else {
-				ShoppingCart.Items = append(ShoppingCart.Items, *newItem)
-			}
+	exists := false
+	for idx, item := range ShoppingCart.Items {
+		if item.Name == newItem.Name {
+			ShoppingCart.Items[idx].Qty += newItem.Qty // Increment qty
+			exists = true
 		}
+	}
+	if !exists {
+		ShoppingCart.Items = append(ShoppingCart.Items, *newItem)
 	}
 	ShoppingCart.Total += newItem.Price
 }
 
-func DisplayCart()  {
-	fmt.Println(ShoppingCart)
+func DisplayCart() {
+	fmt.Println("\n\n\t******* Your shopping cart *******")
+	fmt.Println("\n\t----------------------------------")
+	fmt.Println("\t| # | Qty | Name | Price | Total |")
+	fmt.Println("\t----------------------------------")
+	for idx, item := range ShoppingCart.Items {
+		fmt.Printf("\t|%3d|%5d|%6s|%7.2f|%7.2f|\n", idx, item.Qty, item.Name, item.Price, item.Price * float64(item.Qty))
+		fmt.Println("\t----------------------------------")	}
+	fmt.Printf("\n\tTotal :: %f\n", ShoppingCart.Total)
+	fmt.Println("\t----------------------------------")
 }

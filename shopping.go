@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
+	"github.com/nyugoh/go-shopping-cli/cart"
 	"github.com/nyugoh/go-shopping-cli/store"
 	"github.com/nyugoh/go-shopping-cli/utils"
 	"strconv"
-	"github.com/nyugoh/go-shopping-cli/cart"
 )
 
 var (
@@ -39,7 +39,7 @@ func setOption(s string) {
 	}
 }
 
-func addToCart()  {
+func addToCart() {
 	store.ListStock()
 	option := 1
 	for {

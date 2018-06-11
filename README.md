@@ -3,7 +3,7 @@ A simple shopping cart cli application
 ## Features
 
  - [x] Add items to cart
- - [ ] Select items to buy
+ - [x] Select items to buy
  - [ ] Checkout the items
  - [ ] Pay for the items
  - [ ] Get discount
