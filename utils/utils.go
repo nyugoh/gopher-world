@@ -1,6 +1,10 @@
 package utils
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/nyugoh/go-shopping-cli/cart"
+	"github.com/nyugoh/go-shopping-cli/payment"
+)
 
 func WelcomeMessage() {
 	fmt.Println("\n========= Welcome to the best shopping cart =========")
@@ -22,4 +26,21 @@ func MainMenu() {
 	fmt.Println("q - quit the application")
 	fmt.Println("|___________________ END ____________|")
 	fmt.Printf("\nSelect ==> ")
+}
+
+func PrintReceipt()  {
+	fmt.Printf("\n\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
+	fmt.Println("\t\n     Gopher CLI Shopping")
+	fmt.Println("\t   All the geeky stuff you need")
+	fmt.Println("\t----------------------------------")
+	fmt.Println("\t| # | Qty | Name | Price | Total |")
+	fmt.Println("\t----------------------------------")
+	for idx, item := range cart.ShoppingCart.Items {
+		fmt.Printf("\t|%3d|%5d|%6s|%7.2f|%7.2f|\n", idx, item.Qty, item.Name, item.Price, item.Price * float64(item.Qty))
+		fmt.Println("\t----------------------------------")	}
+	fmt.Printf("\n\t|%23s|%7.2f|", "Total", cart.ShoppingCart.Total)
+	fmt.Printf("\n\t|%23s|%7.2f|", "Discount", payment.Discount)
+	fmt.Printf("\n\t|%23s|%7.2f|", "Balance", payment.Balance)
+	fmt.Printf("\n\t|%23s|%7.2f|", "Payments", payment.Amount)
+	fmt.Printf("\n\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n")
 }

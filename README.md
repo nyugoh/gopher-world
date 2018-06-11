@@ -7,7 +7,7 @@ A simple shopping cart cli application
  - [x] Checkout the items
  - [x] Pay for the items
  - [x] Get discount
- - [ ] Get discount
+ - [x] Print receipt
 
 ## Implementation
 

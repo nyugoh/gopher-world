@@ -8,6 +8,7 @@ import (
 	"strconv"
 	"time"
 	"strings"
+	"github.com/nyugoh/go-shopping-cli/payment"
 )
 
 var (
@@ -118,26 +119,7 @@ func removeFromCart()  {
 }
 
 func pay()  {
-	total, balance, discount, option := cart.ShoppingCart.Total, cart.ShoppingCart.Total, 0.00, "n"
-	fmt.Println("Apply discount y/n")
-	fmt.Scanf("%s", &option)
-	if option == "y" {
-		fmt.Print("\nEnter discount amount ::")
-		fmt.Scanf("%f", &discount)
-		balance -= discount
-	}
-	// Display balance
-	for {
-		fmt.Printf("\n\nBalance :: %f", balance)
-		fmt.Printf("\nTotal   :: %f", total)
-		amount := 0.00
-		fmt.Print("\nAdd payment  ==>")
-		fmt.Scanf("%f", &amount)
-		balance -= amount
-		if balance == 0.00 {
-			break
-		}
-	}
+	payment.ProcessOrder()
 	opt := 1
 	fmt.Print("\n\nOptions 0. Quit 1.Print receipt ==>")
 	fmt.Scanf("%d", &opt)
