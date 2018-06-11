@@ -1,11 +1,16 @@
 # Go-shopping
 A simple shopping cart cli application
 ## Features
-[ ] Add items to cart
-[ ] Select items to buy
-[ ] Checkout the items
-[ ] Pay for the items
-[ ] Get discount
+
+ [ ] Add items to cart
+
+ [ ] Select items to buy
+ 
+ [ ] Checkout the items
+ 
+ [ ] Pay for the items
+ 
+ [ ] Get discount
 
 ## Implementation
 
