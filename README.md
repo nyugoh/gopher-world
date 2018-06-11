@@ -6,6 +6,7 @@ A simple shopping cart cli application
  - [x] Select items to buy
  - [x] Checkout the items
  - [x] Pay for the items
+ - [x] Get discount
  - [ ] Get discount
 
 ## Implementation
