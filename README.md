@@ -4,8 +4,8 @@ A simple shopping cart cli application
 
  - [x] Add items to cart
  - [x] Select items to buy
- - [ ] Checkout the items
- - [ ] Pay for the items
+ - [x] Checkout the items
+ - [x] Pay for the items
  - [ ] Get discount
 
 ## Implementation
