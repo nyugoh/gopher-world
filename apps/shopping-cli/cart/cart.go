@@ -40,17 +40,18 @@ func DisplayCart() {
 		fmt.Println("\tEmpty....!! :) use 3 to add items.")
 	}
 	for idx, item := range ShoppingCart.Items {
-		fmt.Printf("\t|%3d|%5d|%6s|%7.2f|%7.2f|\n", idx, item.Qty, item.Name, item.Price, item.Price * float64(item.Qty))
-		fmt.Println("\t----------------------------------")	}
+		fmt.Printf("\t|%3d|%5d|%6s|%7.2f|%7.2f|\n", idx, item.Qty, item.Name, item.Price, item.Price*float64(item.Qty))
+		fmt.Println("\t----------------------------------")
+	}
 	fmt.Printf("\n\tTotal :: %f\n", ShoppingCart.Total)
 	fmt.Println("\t----------------------------------")
 }
 
-func RemoveItem(id int)  {
+func RemoveItem(id int) {
 	items := make([]CartItem, 0)
 	for idx, item := range ShoppingCart.Items {
 		if id == idx {
-			ShoppingCart.Total -= item.Price* float64(item.Qty)
+			ShoppingCart.Total -= item.Price * float64(item.Qty)
 			continue
 		}
 		items = append(items, item)
@@ -59,7 +60,7 @@ func RemoveItem(id int)  {
 	DisplayCart()
 }
 
-func EmptyCart()  {
+func EmptyCart() {
 	ShoppingCart.Total = 0
 	ShoppingCart.Items = []CartItem{}
 	DisplayCart()

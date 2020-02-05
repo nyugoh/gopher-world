@@ -1,14 +1,14 @@
 package main
 
 import (
+	"./cart"
+	"./payment"
+	"./store"
+	"./utils"
 	"fmt"
-	"github.com/nyugoh/go-shopping-cli/cart"
-	"github.com/nyugoh/go-shopping-cli/store"
-	"github.com/nyugoh/go-shopping-cli/utils"
 	"strconv"
-	"time"
 	"strings"
-	"github.com/nyugoh/go-shopping-cli/payment"
+	"time"
 )
 
 var (
@@ -75,7 +75,7 @@ func addToCart() {
 	}
 }
 
-func checkOut()  {
+func checkOut() {
 	option := 1
 	cart.DisplayCart()
 	fmt.Println("Options 0.Continue shopping 1.Proceed to payment 2.Remove item 3.Empty cart")
@@ -94,20 +94,20 @@ func checkOut()  {
 	}
 }
 
-func processCart()  {
+func processCart() {
 	loading := "-\\|/"
 	fmt.Println("Processing cart")
-	for i:=0; i<100; i++  {
+	for i := 0; i < 100; i++ {
 		for _, symbol := range strings.Split(loading, "") {
 			fmt.Printf("\r----------%s----------", symbol)
-			time.Sleep(10000*time.Microsecond)
+			time.Sleep(10000 * time.Microsecond)
 		}
 	}
 	fmt.Printf("\n Total items ==> %d", len(cart.ShoppingCart.Items))
 	fmt.Printf("\n Total price ==> %f\n", cart.ShoppingCart.Total)
 }
 
-func removeFromCart()  {
+func removeFromCart() {
 	itemId := 0
 	fmt.Printf("Item id to remove ==> ")
 	fmt.Scanf("%d", &itemId)
@@ -118,7 +118,7 @@ func removeFromCart()  {
 	cart.RemoveItem(itemId)
 }
 
-func pay()  {
+func pay() {
 	payment.ProcessOrder()
 	opt := 1
 	fmt.Print("\n\nOptions 0. Quit 1.Print receipt ==>")

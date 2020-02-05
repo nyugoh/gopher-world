@@ -1,19 +1,19 @@
 package payment
 
 import (
-	"github.com/nyugoh/go-shopping-cli/cart"
+	"../cart"
 	"fmt"
 )
 
 var (
-	Amount float64
-	Total float64
-	Balance float64
+	Amount   float64
+	Total    float64
+	Balance  float64
 	Discount float64
 )
 
 func ProcessOrder() {
-	Amount, Total, Balance, Discount= 0.00, cart.ShoppingCart.Total, cart.ShoppingCart.Total, 0.00
+	Amount, Total, Balance, Discount = 0.00, cart.ShoppingCart.Total, cart.ShoppingCart.Total, 0.00
 	option := "n" // Default to no
 	fmt.Println("Apply Discount y/n")
 	fmt.Scanf("%s", &option)
