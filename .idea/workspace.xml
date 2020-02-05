@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="732cbc49-9db6-44b5-95f8-68ef73d4091b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/shopping-cli/cart/cart.go" beforeDir="false" afterPath="$PROJECT_DIR$/apps/shopping-cli/cart/cart.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/shopping-cli/payment/payment.go" beforeDir="false" afterPath="$PROJECT_DIR$/apps/shopping-cli/payment/payment.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/shopping-cli/shopping.go" beforeDir="false" afterPath="$PROJECT_DIR$/apps/shopping-cli/shopping.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/shopping-cli/utils/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/apps/shopping-cli/utils/utils.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basics/arrays/range.go" beforeDir="false" afterPath="$PROJECT_DIR$/basics/arrays/range.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,22 +150,22 @@
       <screen x="0" y="0" width="1366" height="723" />
     </state>
     <state x="360" y="99" width="424" height="494" key="FileChooserDialogImpl/0.0.1366.723@0.0.1366.723" timestamp="1580887200263" />
-    <state width="1103" height="149" key="GridCell.Tab.0.bottom" timestamp="1580888123730">
+    <state width="1103" height="148" key="GridCell.Tab.0.bottom" timestamp="1580888176508">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="1103" height="149" key="GridCell.Tab.0.bottom/0.0.1366.723@0.0.1366.723" timestamp="1580888123730" />
-    <state width="1103" height="149" key="GridCell.Tab.0.center" timestamp="1580888123729">
+    <state width="1103" height="148" key="GridCell.Tab.0.bottom/0.0.1366.723@0.0.1366.723" timestamp="1580888176508" />
+    <state width="1103" height="148" key="GridCell.Tab.0.center" timestamp="1580888176508">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="1103" height="149" key="GridCell.Tab.0.center/0.0.1366.723@0.0.1366.723" timestamp="1580888123729" />
-    <state width="1103" height="149" key="GridCell.Tab.0.left" timestamp="1580888123729">
+    <state width="1103" height="148" key="GridCell.Tab.0.center/0.0.1366.723@0.0.1366.723" timestamp="1580888176508" />
+    <state width="1103" height="148" key="GridCell.Tab.0.left" timestamp="1580888176507">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="1103" height="149" key="GridCell.Tab.0.left/0.0.1366.723@0.0.1366.723" timestamp="1580888123729" />
-    <state width="1103" height="149" key="GridCell.Tab.0.right" timestamp="1580888123730">
+    <state width="1103" height="148" key="GridCell.Tab.0.left/0.0.1366.723@0.0.1366.723" timestamp="1580888176507" />
+    <state width="1103" height="148" key="GridCell.Tab.0.right" timestamp="1580888176508">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="1103" height="149" key="GridCell.Tab.0.right/0.0.1366.723@0.0.1366.723" timestamp="1580888123730" />
+    <state width="1103" height="148" key="GridCell.Tab.0.right/0.0.1366.723@0.0.1366.723" timestamp="1580888176508" />
   </component>
   <component name="masterDetails">
     <states>
