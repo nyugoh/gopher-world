@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
   // Define variables
-  var scores[5] float64{60, 70, 50, 90, 60}
+  scores := []float64{60, 70, 50, 90, 60}
   var total float64 = 0
 
 
