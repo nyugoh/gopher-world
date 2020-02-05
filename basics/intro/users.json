@@ -1,0 +1,25 @@
+{
+  "users" : [
+    {
+      "name": "Joe Nyugoh",
+      "age": 24,
+      "gender": "M",
+      "weight": 62.5,
+      "address" : {
+        "street": "Kiambu Rd",
+        "post": 61,
+        "postalCode": "0202"
+      }
+    }, {
+      "name": "Diana Wanjiru",
+      "age": 22,
+      "gender": "F",
+      "weight": 55.5,
+      "address" : {
+        "street": "Lanet",
+        "post": 926,
+        "postalCode": "02903"
+      }
+    }
+  ]
+}
