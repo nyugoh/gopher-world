@@ -2,13 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="732cbc49-9db6-44b5-95f8-68ef73d4091b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basics/REST/rest/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basics/REST/rest/models.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basics/REST/rest/routes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basics/REST/rest/tables.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Container" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Container" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Container" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="blog_api: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Container" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="blog_api: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="posts: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -31,24 +71,32 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/shopping-cli" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/nyugoh/gopher-world/exercises (2)">
-    <configuration name="go build closing_channels.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/basics/REST/rest" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build github.com/nyugoh/gopher-world/basics/REST">
+    <configuration name="go build github.com/nyugoh/gopher-world/basics/REST" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GoLang" />
       <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/closing_channels.go" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/basics/REST/routing.go" />
+      <package value="github.com/nyugoh/gopher-world/basics/REST" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -89,19 +137,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build closing_channels.go" />
       <item itemvalue="Go Build.go build tikers.go" />
       <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises" />
       <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (1)" />
       <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (2)" />
+      <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/basics/REST" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/basics/REST" />
         <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (2)" />
         <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (1)" />
         <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises" />
         <item itemvalue="Go Build.go build tikers.go" />
-        <item itemvalue="Go Build.go build closing_channels.go" />
       </list>
     </recent_temporary>
   </component>
@@ -110,7 +158,22 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:Container" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:Container" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4395c61" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:Container" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@5655beda" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -134,6 +197,18 @@
       <screen x="0" y="0" width="1366" height="723" />
     </state>
     <state x="172" y="3" width="800" height="687" key="#GOROOT/0.0.1366.723@0.0.1366.723" timestamp="1580887822421" />
+    <state x="0" y="23" width="800" height="687" key="#SQL_Dialects" timestamp="1581164488764">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="0" y="23" width="800" height="687" key="#SQL_Dialects/0.0.1366.723@0.0.1366.723" timestamp="1581164488764" />
+    <state x="172" y="3" width="800" height="687" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581159729102">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="172" y="3" width="800" height="687" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.723@0.0.1366.723" timestamp="1581159729102" />
+    <state x="115" y="0" width="542" height="723" key="#go_build_github.com/nyugoh/gopher-world/basics/REST" timestamp="1581161361544">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="115" y="0" width="542" height="723" key="#go_build_github.com/nyugoh/gopher-world/basics/REST/0.0.1366.723@0.0.1366.723" timestamp="1581161361544" />
     <state x="42" y="0" width="542" height="723" key="#go_build_github.com/nyugoh/gopher-world/exercises" timestamp="1580887998347">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
@@ -150,22 +225,30 @@
       <screen x="0" y="0" width="1366" height="723" />
     </state>
     <state x="360" y="99" width="424" height="494" key="FileChooserDialogImpl/0.0.1366.723@0.0.1366.723" timestamp="1580887200263" />
-    <state width="1103" height="148" key="GridCell.Tab.0.bottom" timestamp="1580888176508">
+    <state width="944" height="145" key="GridCell.Tab.0.bottom" timestamp="1581166374427">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="1103" height="148" key="GridCell.Tab.0.bottom/0.0.1366.723@0.0.1366.723" timestamp="1580888176508" />
-    <state width="1103" height="148" key="GridCell.Tab.0.center" timestamp="1580888176508">
+    <state width="944" height="145" key="GridCell.Tab.0.bottom/0.0.1366.723@0.0.1366.723" timestamp="1581166374427" />
+    <state width="944" height="145" key="GridCell.Tab.0.center" timestamp="1581166374425">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="1103" height="148" key="GridCell.Tab.0.center/0.0.1366.723@0.0.1366.723" timestamp="1580888176508" />
-    <state width="1103" height="148" key="GridCell.Tab.0.left" timestamp="1580888176507">
+    <state width="944" height="145" key="GridCell.Tab.0.center/0.0.1366.723@0.0.1366.723" timestamp="1581166374425" />
+    <state width="944" height="145" key="GridCell.Tab.0.left" timestamp="1581166374424">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="1103" height="148" key="GridCell.Tab.0.left/0.0.1366.723@0.0.1366.723" timestamp="1580888176507" />
-    <state width="1103" height="148" key="GridCell.Tab.0.right" timestamp="1580888176508">
+    <state width="944" height="145" key="GridCell.Tab.0.left/0.0.1366.723@0.0.1366.723" timestamp="1581166374424" />
+    <state width="944" height="145" key="GridCell.Tab.0.right" timestamp="1581166374426">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="1103" height="148" key="GridCell.Tab.0.right/0.0.1366.723@0.0.1366.723" timestamp="1580888176508" />
+    <state width="944" height="145" key="GridCell.Tab.0.right/0.0.1366.723@0.0.1366.723" timestamp="1581166374426" />
+    <state x="89" y="0" key="SettingsEditor" timestamp="1581158361428">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="89" y="0" key="SettingsEditor/0.0.1366.723@0.0.1366.723" timestamp="1581158361428" />
+    <state x="399" y="250" width="317" height="261" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1581164732400">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="399" y="250" width="317" height="261" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.723@0.0.1366.723" timestamp="1581164732400" />
   </component>
   <component name="masterDetails">
     <states>
