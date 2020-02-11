@@ -1,0 +1,10 @@
+{{ template "header.html" .}}
+
+<div>
+    <h2>Articles view</h2>
+
+    <h3>{{ .payload.Title}}</h3>
+
+    <p>{{ .payload.Content }}</p>
+</div>
+{{ template "footer.html" .}}
