@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="732cbc49-9db6-44b5-95f8-68ef73d4091b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/basics/REST/rest/db.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basics/REST/rest/models.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basics/REST/rest/routes.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basics/REST/rest/tables.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basics/REST/rest/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/basics/REST/rest/routes.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,12 +163,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:Container" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@4395c61" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:Container" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@5655beda" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@1a7e5ef0" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -205,6 +197,10 @@
       <screen x="0" y="0" width="1366" height="723" />
     </state>
     <state x="172" y="3" width="800" height="687" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.723@0.0.1366.723" timestamp="1581159729102" />
+    <state x="260" y="76" width="624" height="540" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581326379486">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="260" y="76" width="624" height="540" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.723@0.0.1366.723" timestamp="1581326379486" />
     <state x="115" y="0" width="542" height="723" key="#go_build_github.com/nyugoh/gopher-world/basics/REST" timestamp="1581161361544">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
@@ -225,22 +221,22 @@
       <screen x="0" y="0" width="1366" height="723" />
     </state>
     <state x="360" y="99" width="424" height="494" key="FileChooserDialogImpl/0.0.1366.723@0.0.1366.723" timestamp="1580887200263" />
-    <state width="944" height="145" key="GridCell.Tab.0.bottom" timestamp="1581166374427">
+    <state width="860" height="133" key="GridCell.Tab.0.bottom" timestamp="1581337314607">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="944" height="145" key="GridCell.Tab.0.bottom/0.0.1366.723@0.0.1366.723" timestamp="1581166374427" />
-    <state width="944" height="145" key="GridCell.Tab.0.center" timestamp="1581166374425">
+    <state width="860" height="133" key="GridCell.Tab.0.bottom/0.0.1366.723@0.0.1366.723" timestamp="1581337314607" />
+    <state width="860" height="133" key="GridCell.Tab.0.center" timestamp="1581337314606">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="944" height="145" key="GridCell.Tab.0.center/0.0.1366.723@0.0.1366.723" timestamp="1581166374425" />
-    <state width="944" height="145" key="GridCell.Tab.0.left" timestamp="1581166374424">
+    <state width="860" height="133" key="GridCell.Tab.0.center/0.0.1366.723@0.0.1366.723" timestamp="1581337314606" />
+    <state width="860" height="133" key="GridCell.Tab.0.left" timestamp="1581337314605">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="944" height="145" key="GridCell.Tab.0.left/0.0.1366.723@0.0.1366.723" timestamp="1581166374424" />
-    <state width="944" height="145" key="GridCell.Tab.0.right" timestamp="1581166374426">
+    <state width="860" height="133" key="GridCell.Tab.0.left/0.0.1366.723@0.0.1366.723" timestamp="1581337314605" />
+    <state width="860" height="133" key="GridCell.Tab.0.right" timestamp="1581337314606">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="944" height="145" key="GridCell.Tab.0.right/0.0.1366.723@0.0.1366.723" timestamp="1581166374426" />
+    <state width="860" height="133" key="GridCell.Tab.0.right/0.0.1366.723@0.0.1366.723" timestamp="1581337314606" />
     <state x="89" y="0" key="SettingsEditor" timestamp="1581158361428">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
