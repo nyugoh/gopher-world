@@ -53,12 +53,12 @@
                             <td>{{ .ID}}</td>
                             <td>{{ .Name}}</td>
                             <td>{{ .Description}}</td>
-                            <td>{{ .CategoryId}}</td>
-                            <td>{{ .TaxId}}</td>
+                            <td>{{ .Categoryid}}</td>
+                            <td>{{ .Taxid}}</td>
                             <td>{{ .ReorderPoint}}</td>
                             <td>{{ .StockType}}</td>
                             <td>
-                                <a href="javascript: editItem( {{.ID}}, '{{ .Name}}', '{{ .Description}}', {{ .CategoryId}}, {{ .TaxId}}, {{ .ReorderPoint}});">
+                                <a href="javascript: editItem( {{.ID}}, '{{ .Name}}', '{{ .Description}}', {{ .Categoryid}}, {{ .Taxid}}, {{ .ReorderPoint}});">
                                     <i class="mdi mdi-pencil text-info mdi-18px"></i>
                                 </a>
                                 <a href="javascript: deleteItem( {{.ID}} , '{{ .Name}}');">

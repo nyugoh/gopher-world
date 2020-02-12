@@ -6,12 +6,12 @@ import (
 
 type StoredItems struct {
 	ID           int64  `json:"id"`
-	CategoryId   int64  `json:"categoryid"`
+	Categoryid   int64  `json:"categoryid"`
 	Name         string `json:"name"`
 	Description  string `json:"description"`
-	ReorderPoint int64  `json:"reorderPoint"`
+	ReorderPoint int64  `json:"reorderpoint"`
 	StockType    int64  `json:"stockType"`
-	TaxId        int64  `json:"taxid"`
+	Taxid        int64  `json:"taxid"`
 }
 
 type StoredCategories struct {

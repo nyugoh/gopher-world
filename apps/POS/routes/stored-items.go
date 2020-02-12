@@ -14,7 +14,7 @@ func FetchStoredItems(c *gin.Context) {
 	var items []qpos2.StoredItems
 	db.Find(&items)
 	for _, item:= range items {
-		fmt.Println("Cat Id",item.CategoryId)
+		fmt.Println("Cat Id",item.Categoryid)
 		fmt.Println("Reorder", item)
 	}
 	c.HTML(http.StatusOK, "stored-items.html", gin.H{
@@ -30,8 +30,6 @@ func FetchCategoriesSuppliers(c *gin.Context) {
 	var suppliers []qpos2.StoredSuppliers
 	db.Find(&categories)
 	db.Find(&suppliers)
-	fmt.Println(categories)
-	fmt.Println(suppliers)
 	c.HTML(http.StatusOK, "categories-suppliers.html", gin.H{
 		"title": "Categories & Suppliers",
 		"categories": categories,
