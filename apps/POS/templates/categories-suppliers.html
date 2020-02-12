@@ -1,0 +1,168 @@
+{{ template "header.html" .}}
+
+<!-- DataTables -->
+<link href="/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+<link href="/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+{{ template "styles.html" .}}
+
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-8">
+                        <h3 class="header-title">Categories</h3>
+                        <p class="card-title-desc">These are categories used to classify items</p>
+                    </div>
+                    <div class="col-4 text-lg-right">
+                        <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#add-category">Add <i class="mdi mdi-pencil-plus-outline"></i></button>
+                    </div>
+                </div>
+                <table id="categories-dt" class="table table-hover table-striped dt-responsive nowrap"
+                       style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                    <thead class="thead-light">
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Items</th>
+                    <th>Actions</th>
+                    </thead>
+                    <tbody>
+                    {{range .categories }}
+                        <tr>
+                            <td>{{ .ID}}</td>
+                            <td>{{ .Name}}</td>
+                            <td>20</td>
+                            <td>
+                                <i class="mdi mdi-pencil text-primary mdi-18px"></i>
+                                <i class="mdi mdi-trash-can text-danger mdi-18px"></i>
+                            </td>
+                        </tr>
+                    {{end}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-8">
+                        <h3 class="header-title">Suppliers</h3>
+                        <p class="card-title-desc">These are items suppliers</p>
+                    </div>
+                    <div class="col-4 text-lg-right">
+                        <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#add-supplier">Add <i class="mdi mdi-pencil-plus-outline"></i></button>
+                    </div>
+                </div>
+                <table id="suppliers-dt" class="table table-hover table-striped dt-responsive nowrap"
+                       style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                    <thead class="thead-light">
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Items</th>
+                    <th>Actions</th>
+                    </thead>
+                    <tbody>
+                    {{range .suppliers }}
+                        <tr>
+                            <td>{{ .ID}}</td>
+                            <td>{{ .Name}}</td>
+                            <td>20</td>
+                            <td>
+                                <i class="mdi mdi-pencil text-primary mdi-18px"></i>
+                                <i class="mdi mdi-trash-can text-danger mdi-18px"></i>
+                            </td>
+                        </tr>
+                    {{end}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{{ template "scripts.html" .}}
+<!-- Required datatable js -->
+<script src="/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+<!-- Buttons examples -->
+<script src="/assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="/assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+<script src="/assets/libs/jszip/jszip.min.js"></script>
+<script src="/assets/libs/pdfmake/build/pdfmake.min.js"></script>
+<script src="/assets/libs/pdfmake/build/vfs_fonts.js"></script>
+<script src="/assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="/assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="/assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+<!-- Responsive examples -->
+<script src="/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+        $('#suppliers-dt').DataTable();
+        $('#categories-dt').DataTable();
+    });
+
+</script>
+
+<div id="add-category" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="add" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title mt-0" id="myModalLabel">Add Category</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label">Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="cat-name" required>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary waves-effect waves-light">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+<div id="add-supplier" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="add" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title mt-0" id="myModalLabel">Add Supplier</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label">Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="sup-name" required>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary waves-effect waves-light">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+{{ template "footer.html" .}}
