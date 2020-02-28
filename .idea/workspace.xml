@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="732cbc49-9db6-44b5-95f8-68ef73d4091b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basics/REST/rest/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/basics/REST/rest/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rest-api/utils/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rest-api/utils/logger.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,25 +24,25 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Container" type="feb32156:DbDataSourceImpl" />
+        <item name="MariaDB - betika_new@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Container" type="feb32156:DbDataSourceImpl" />
+        <item name="MariaDB - betika_new@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Container" type="feb32156:DbDataSourceImpl" />
+        <item name="MariaDB - betika_new@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="blog_api: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="betika_new: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Container" type="feb32156:DbDataSourceImpl" />
+        <item name="MariaDB - betika_new@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="blog_api: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="posts: table" type="dbc44a63:MariaImplModel$Table" />
+        <item name="betika_new: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="uof_outcome: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -54,9 +54,12 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/src/go" />
+  <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1XNWStGQ57O6v1Uvazi3fnLgZcH" />
   <component name="ProjectLevelVcsManager">
@@ -75,8 +78,15 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -84,10 +94,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/redis/utils" />
       <recent name="$PROJECT_DIR$/basics/REST/rest" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/nyugoh/gopher-world/basics/REST">
+  <component name="RunManager" selected="Go Build.go build github.com/nyugoh/gopher-world/redis">
     <configuration name="go build github.com/nyugoh/gopher-world/basics/REST" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GoLang" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -124,29 +135,29 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build tikers.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github.com/nyugoh/gopher-world/redis" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GoLang" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/tikers.go" />
+      <working_directory value="$PROJECT_DIR$/redis" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/redis/main.go" />
+      <package value="github.com/nyugoh/gopher-world/redis" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build tikers.go" />
       <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises" />
       <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (1)" />
       <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (2)" />
       <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/basics/REST" />
+      <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/redis" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/redis" />
         <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/basics/REST" />
         <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (2)" />
         <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (1)" />
         <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises" />
-        <item itemvalue="Go Build.go build tikers.go" />
       </list>
     </recent_temporary>
   </component>
@@ -158,12 +169,12 @@
             <expand>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:Container" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="root:MariaDB - betika_new@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:Container" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@1a7e5ef0" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="root:MariaDB - betika_new@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@6bad7a7c" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -184,19 +195,30 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="172" y="3" width="800" height="687" key="#GOROOT" timestamp="1580887822421">
+    <state x="172" y="3" width="800" height="687" key="#GOROOT" timestamp="1582723726989">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state x="172" y="3" width="800" height="687" key="#GOROOT/0.0.1366.723@0.0.1366.723" timestamp="1580887822421" />
-    <state x="0" y="23" width="800" height="687" key="#SQL_Dialects" timestamp="1581164488764">
+    <state x="172" y="3" width="800" height="687" key="#GOROOT/0.0.1366.723@0.0.1366.723" timestamp="1582723726989" />
+    <state x="278" y="23" width="800" height="687" key="#Go_Modules_(vgo)" timestamp="1582723737596">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state x="0" y="23" width="800" height="687" key="#SQL_Dialects/0.0.1366.723@0.0.1366.723" timestamp="1581164488764" />
-    <state x="172" y="3" width="800" height="687" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581159729102">
+    <state x="278" y="23" width="800" height="687" key="#Go_Modules_(vgo)/0.0.1366.723@0.0.1366.723" timestamp="1582723737596" />
+    <state x="0" y="23" width="800" height="687" key="#SQL_Dialects" timestamp="1582799184136">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state x="172" y="3" width="800" height="687" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.723@0.0.1366.723" timestamp="1581159729102" />
+    <state x="0" y="23" width="800" height="687" key="#SQL_Dialects/0.0.1366.723@0.0.1366.723" timestamp="1582799184136" />
+    <state x="172" y="3" width="800" height="687" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582799216999">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="172" y="3" width="800" height="687" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.723@0.0.1366.723" timestamp="1582799216999" />
+    <state x="448" y="167" width="460" height="399" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582863163218">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="448" y="167" width="460" height="399" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.723@0.0.1366.723" timestamp="1582863163218" />
     <state x="260" y="76" width="624" height="540" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581326379486">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
@@ -217,26 +239,30 @@
       <screen x="0" y="0" width="1366" height="723" />
     </state>
     <state x="42" y="0" width="542" height="723" key="#go_build_github.com/nyugoh/gopher-world/exercises_(2)/0.0.1366.723@0.0.1366.723" timestamp="1580888123287" />
+    <state x="50" y="0" width="558" height="723" key="#go_build_github.com/nyugoh/gopher-world/redis" timestamp="1582796191081">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="50" y="0" width="558" height="723" key="#go_build_github.com/nyugoh/gopher-world/redis/0.0.1366.723@0.0.1366.723" timestamp="1582796191081" />
     <state x="360" y="99" width="424" height="494" key="FileChooserDialogImpl" timestamp="1580887200263">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
     <state x="360" y="99" width="424" height="494" key="FileChooserDialogImpl/0.0.1366.723@0.0.1366.723" timestamp="1580887200263" />
-    <state width="860" height="133" key="GridCell.Tab.0.bottom" timestamp="1581337314607">
+    <state width="903" height="166" key="GridCell.Tab.0.bottom" timestamp="1582800328466">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="860" height="133" key="GridCell.Tab.0.bottom/0.0.1366.723@0.0.1366.723" timestamp="1581337314607" />
-    <state width="860" height="133" key="GridCell.Tab.0.center" timestamp="1581337314606">
+    <state width="903" height="166" key="GridCell.Tab.0.bottom/0.0.1366.723@0.0.1366.723" timestamp="1582800328466" />
+    <state width="903" height="166" key="GridCell.Tab.0.center" timestamp="1582800328463">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="860" height="133" key="GridCell.Tab.0.center/0.0.1366.723@0.0.1366.723" timestamp="1581337314606" />
-    <state width="860" height="133" key="GridCell.Tab.0.left" timestamp="1581337314605">
+    <state width="903" height="166" key="GridCell.Tab.0.center/0.0.1366.723@0.0.1366.723" timestamp="1582800328463" />
+    <state width="903" height="166" key="GridCell.Tab.0.left" timestamp="1582800328461">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="860" height="133" key="GridCell.Tab.0.left/0.0.1366.723@0.0.1366.723" timestamp="1581337314605" />
-    <state width="860" height="133" key="GridCell.Tab.0.right" timestamp="1581337314606">
+    <state width="903" height="166" key="GridCell.Tab.0.left/0.0.1366.723@0.0.1366.723" timestamp="1582800328461" />
+    <state width="903" height="166" key="GridCell.Tab.0.right" timestamp="1582800328465">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state width="860" height="133" key="GridCell.Tab.0.right/0.0.1366.723@0.0.1366.723" timestamp="1581337314606" />
+    <state width="903" height="166" key="GridCell.Tab.0.right/0.0.1366.723@0.0.1366.723" timestamp="1582800328465" />
     <state x="89" y="0" key="SettingsEditor" timestamp="1581158361428">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
@@ -245,6 +271,10 @@
       <screen x="0" y="0" width="1366" height="723" />
     </state>
     <state x="399" y="250" width="317" height="261" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.723@0.0.1366.723" timestamp="1581164732400" />
+    <state x="317" y="0" width="722" height="723" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582793467861">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="317" y="0" width="722" height="723" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.723@0.0.1366.723" timestamp="1582793467861" />
   </component>
   <component name="masterDetails">
     <states>

@@ -2,6 +2,7 @@ package utils
 
 import (
 	"fmt"
+	"github.com/joho/godotenv"
 	"log"
 	"os"
 	"time"
@@ -10,21 +11,23 @@ import (
 )
 
 func InitLogger() {
+	godotenv.Load()
 	logFolder := os.Getenv("LOG_FOLDER")
+	appName := os.Getenv("APP_NAME")
+	fmt.Println(logFolder, appName)
 	writer, err := rotatelogs.New(
-		fmt.Sprintf("%s.%s.log", logFolder+"freebets-old", "%Y-%m-%d.%H%M"),
-		rotatelogs.WithLinkName(logFolder+"freebets.log"),
-		rotatelogs.WithRotationTime(time.Hour*1),
+		fmt.Sprintf("%s%s-old.%s.log", logFolder, appName, "%Y-%m-%d.%H%M"),
+		rotatelogs.WithLinkName(fmt.Sprintf("%s%s.log", logFolder, appName)),
+		rotatelogs.WithRotationTime(time.Hour*24),
 	)
 	if err != nil {
 		fmt.Println("Failed to initialize log file ", err.Error())
 	}
+	log.Println(writer.CurrentFileName())
 	log.SetOutput(writer)
-	return
+	Log("Logger intialized successfully...")
 }
 
 func Log(msg ...interface{}) {
-	fmt.Printf("%s: ", time.Now().String())
-	fmt.Print(msg...)
-	log.Println(msg...)
+	log.Println(msg)
 }
