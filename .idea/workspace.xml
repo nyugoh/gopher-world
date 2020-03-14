@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="732cbc49-9db6-44b5-95f8-68ef73d4091b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rest-api/utils/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rest-api/utils/logger.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +79,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../gitlab.com/quebase/qpos" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -98,7 +97,7 @@
       <recent name="$PROJECT_DIR$/basics/REST/rest" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/nyugoh/gopher-world/redis">
+  <component name="RunManager" selected="Go Build.go build github.com/nyugoh/gopher-world/sorting">
     <configuration name="go build github.com/nyugoh/gopher-world/basics/REST" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GoLang" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -126,15 +125,6 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/nyugoh/gopher-world/exercises" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="GoLang" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/exercises/example1.go" />
-      <package value="github.com/nyugoh/gopher-world/exercises" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build github.com/nyugoh/gopher-world/redis" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GoLang" />
       <working_directory value="$PROJECT_DIR$/redis" />
@@ -144,20 +134,29 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build github.com/nyugoh/gopher-world/sorting" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GoLang" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/sorting/merge_sort.go" />
+      <package value="github.com/nyugoh/gopher-world/sorting" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises" />
       <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (1)" />
       <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (2)" />
       <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/basics/REST" />
       <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/redis" />
+      <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/sorting" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/sorting" />
         <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/redis" />
         <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/basics/REST" />
         <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (2)" />
         <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (1)" />
-        <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises" />
       </list>
     </recent_temporary>
   </component>
@@ -243,10 +242,14 @@
       <screen x="0" y="0" width="1366" height="723" />
     </state>
     <state x="50" y="0" width="558" height="723" key="#go_build_github.com/nyugoh/gopher-world/redis/0.0.1366.723@0.0.1366.723" timestamp="1582796191081" />
-    <state x="360" y="99" width="424" height="494" key="FileChooserDialogImpl" timestamp="1580887200263">
+    <state x="399" y="6" width="558" height="717" key="#go_build_github.com/nyugoh/gopher-world/sorting" timestamp="1583312235333">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
-    <state x="360" y="99" width="424" height="494" key="FileChooserDialogImpl/0.0.1366.723@0.0.1366.723" timestamp="1580887200263" />
+    <state x="399" y="6" width="558" height="717" key="#go_build_github.com/nyugoh/gopher-world/sorting/0.0.1366.723@0.0.1366.723" timestamp="1583312235333" />
+    <state x="360" y="99" width="424" height="494" key="FileChooserDialogImpl" timestamp="1582864747855">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="360" y="99" width="424" height="494" key="FileChooserDialogImpl/0.0.1366.723@0.0.1366.723" timestamp="1582864747855" />
     <state width="903" height="166" key="GridCell.Tab.0.bottom" timestamp="1582800328466">
       <screen x="0" y="0" width="1366" height="723" />
     </state>
