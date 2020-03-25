@@ -6,6 +6,10 @@ import (
 	"log"
 )
 
+var (
+	QueueName = "QBT_INV_ITEM"
+)
+
 func init()  {
 	fmt.Println("Init utils")
 }
@@ -29,20 +33,43 @@ func GetChannel(connection *amqp.Connection) (channel *amqp.Channel, err error) 
 	return
 }
 
-func DeclareChannelQueue(channel *amqp.Channel, queueName string) (queue amqp.Queue, err error) {
-	queue, err = channel.QueueDeclare(queueName, false, false, false, false, nil)
+func DeclareChannelQueue(channel *amqp.Channel, queueName string, isDurable bool) (queue amqp.Queue, err error) {
+	queue, err = channel.QueueDeclare(
+		queueName,
+		isDurable,
+		false,
+		false,
+		false,
+		nil,
+		)
 	if err != nil {
-		msg := "Unable to declare a queue"
+		msg := "Unable to declare a queue: "
 		log.Fatal(msg, err.Error())
 	}
 	return
 }
 
 func Consume(channel *amqp.Channel, queueName string) (payload <- chan amqp.Delivery, err error) {
-	payload, err = channel.Consume(queueName, "", false, false, false, false, nil)
+	payload, err = channel.Consume(
+		queueName,
+		"",
+		false,
+		false,
+		false,
+		false,
+		nil,
+		)
 	if err != nil {
-		msg := "Unable to declare a queue"
+		msg := "Unable to declare a queue consumer: "
 		log.Fatal(msg, err.Error())
 	}
 	return
+}
+
+func Fail(err error, message string) bool {
+	if err != nil {
+		log.Fatal(message, err.Error())
+		return true
+	}
+	return false
 }
