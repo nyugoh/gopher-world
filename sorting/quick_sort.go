@@ -4,18 +4,10 @@ import (
 	"fmt"
 )
 
-var (
-	arr = make([]int, 10)
-)
-
-func init() {
-	arr = []int{10, 7, 0, 2, 9, 4, 3, 20}
-}
-
-func partition(low int, high int) int {
+func partition(arr []int, low int, high int) int {
 	pivot := arr[high]
 	i := low - 1
-	for j := low; j <= high-1; j++ {
+	for j := low; j < high; j++ {
 		if arr[j] <= pivot {
 			i++
 			arr[i], arr[j] = arr[j], arr[i]
@@ -26,15 +18,15 @@ func partition(low int, high int) int {
 	return i
 }
 
-func quickSort(low int, high int) {
+func quickSort(arr []int, low int, high int) {
 	if low < high {
-		p := partition(low, high)
-		quickSort(low, p-1)
-		quickSort(p+1, high)
+		p := partition(arr, low, high)
+		quickSort(arr, low, p-1)
+		quickSort(arr, p+1, high)
 	}
 }
 
-func printArray() {
+func printArray(arr []int) {
 	for _, val := range arr {
 		fmt.Print(val, " ")
 	}
@@ -42,7 +34,8 @@ func printArray() {
 }
 
 func main() {
-	printArray()
-	quickSort(0, len(arr)-1)
-	printArray()
+	arr := []int{10, 7, 0, 2, 9, 4, 3, 20}
+	printArray(arr)
+	quickSort(arr, 0, len(arr)-1)
+	printArray(arr)
 }
