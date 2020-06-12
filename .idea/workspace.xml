@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="732cbc49-9db6-44b5-95f8-68ef73d4091b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/data-structures/queue/queue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-structures/stack/stack.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,40 +100,40 @@
       <recent name="$PROJECT_DIR$/basics/REST/rest" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/nyugoh/gopher-world/sorting">
-    <configuration name="go build github.com/nyugoh/gopher-world/basics/REST" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build github.com/nyugoh/gopher-world/data-structures/stack">
+    <configuration name="go build github.com/nyugoh/gopher-world/data-structures/binary-tree" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GoLang" />
-      <working_directory value="$PROJECT_DIR$/" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/basics/REST/routing.go" />
-      <package value="github.com/nyugoh/gopher-world/basics/REST" />
+      <filePath value="$PROJECT_DIR$/data-structures/binary-tree/binary-tree.go" />
+      <package value="github.com/nyugoh/gopher-world/data-structures/binary-tree" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/nyugoh/gopher-world/exercises (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github.com/nyugoh/gopher-world/data-structures/linked-list" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GoLang" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/exercises/matrix_addition.go" />
-      <package value="github.com/nyugoh/gopher-world/exercises" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github.com/nyugoh/gopher-world/exercises (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="GoLang" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/exercises/ping_pong.go" />
-      <package value="github.com/nyugoh/gopher-world/exercises" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github.com/nyugoh/gopher-world/redis" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="GoLang" />
-      <working_directory value="$PROJECT_DIR$/redis" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/redis/main.go" />
-      <package value="github.com/nyugoh/gopher-world/redis" />
+      <filePath value="$PROJECT_DIR$/data-structures/linked-list/linked-list.go" />
+      <package value="github.com/nyugoh/gopher-world/data-structures/linked-list" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/nyugoh/gopher-world/data-structures/queue" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GoLang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/data-structures/queue/queue.go" />
+      <package value="github.com/nyugoh/gopher-world/data-structures/queue" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/nyugoh/gopher-world/data-structures/stack" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GoLang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/data-structures/stack/stack.go" />
+      <package value="github.com/nyugoh/gopher-world/data-structures/stack" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -145,19 +147,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (1)" />
-      <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (2)" />
-      <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/basics/REST" />
-      <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/redis" />
       <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/sorting" />
+      <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/data-structures/binary-tree" />
+      <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/data-structures/linked-list" />
+      <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/data-structures/queue" />
+      <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/data-structures/stack" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/data-structures/stack" />
+        <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/data-structures/queue" />
+        <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/data-structures/linked-list" />
+        <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/data-structures/binary-tree" />
         <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/sorting" />
-        <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/redis" />
-        <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/basics/REST" />
-        <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (2)" />
-        <item itemvalue="Go Build.go build github.com/nyugoh/gopher-world/exercises (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -181,10 +183,27 @@
       <screen x="0" y="0" width="1600" height="824" />
     </state>
     <state x="592" y="340" key="#GOROOT/0.0.1600.824@0.0.1600.824" timestamp="1591810190638" />
-    <state x="399" y="6" width="558" height="717" key="#go_build_github.com/nyugoh/gopher-world/sorting" timestamp="1583312235333">
-      <screen x="0" y="0" width="1366" height="723" />
+    <state x="467" y="6" width="681" height="818" key="#go_build_github.com/nyugoh/gopher-world/sorting" timestamp="1591884761635">
+      <screen x="0" y="0" width="1600" height="824" />
     </state>
     <state x="399" y="6" width="558" height="717" key="#go_build_github.com/nyugoh/gopher-world/sorting/0.0.1366.723@0.0.1366.723" timestamp="1583312235333" />
+    <state x="467" y="6" width="681" height="818" key="#go_build_github.com/nyugoh/gopher-world/sorting/0.0.1600.824@0.0.1600.824" timestamp="1591884761635" />
+    <state width="1558" height="199" key="GridCell.Tab.0.bottom" timestamp="1591895299706">
+      <screen x="0" y="0" width="1600" height="824" />
+    </state>
+    <state width="1558" height="199" key="GridCell.Tab.0.bottom/0.0.1600.824@0.0.1600.824" timestamp="1591895299706" />
+    <state width="1558" height="199" key="GridCell.Tab.0.center" timestamp="1591895299705">
+      <screen x="0" y="0" width="1600" height="824" />
+    </state>
+    <state width="1558" height="199" key="GridCell.Tab.0.center/0.0.1600.824@0.0.1600.824" timestamp="1591895299705" />
+    <state width="1558" height="199" key="GridCell.Tab.0.left" timestamp="1591895299705">
+      <screen x="0" y="0" width="1600" height="824" />
+    </state>
+    <state width="1558" height="199" key="GridCell.Tab.0.left/0.0.1600.824@0.0.1600.824" timestamp="1591895299705" />
+    <state width="1558" height="199" key="GridCell.Tab.0.right" timestamp="1591895299706">
+      <screen x="0" y="0" width="1600" height="824" />
+    </state>
+    <state width="1558" height="199" key="GridCell.Tab.0.right/0.0.1600.824@0.0.1600.824" timestamp="1591895299706" />
   </component>
   <component name="masterDetails">
     <states>
