@@ -1,0 +1,19 @@
+syntax = '3';
+
+package ecommerce;
+
+service ProductInfo {
+    rpc addProduct(Product) returns (ProductId);
+    rpc getProduct(ProductId) returns (Product);
+}
+
+message Product {
+    string id = 1;
+    string name = 2;
+    string description = 3;
+    float price = 4;
+}
+
+message ProductId {
+    string id = 1;
+}
