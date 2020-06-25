@@ -13,10 +13,10 @@ func main() {
 }
 func spinner(delay time.Duration) {
 	for {
-		for _, r := range `-\|/` {
-			fmt.Printf("\r%c", r)
-			time.Sleep(delay)
-		}
+	//	for _, r := range `-\|/` {
+	//		fmt.Printf("\r%c", r)
+	//		time.Sleep(delay)
+	//	}
 	}
 }
 func fib(x int) int {
