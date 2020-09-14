@@ -19,5 +19,5 @@ func main() {
   go sum(scores[len(scores)/2:], channel)
   x, y := <-channel, <-channel
 
-  fmt.Println("X + Y ", x+y)
+  fmt.Printf("%d+%d=%d\n", x, y, x+y)
 }
