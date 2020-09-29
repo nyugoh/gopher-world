@@ -1,14 +1,25 @@
 package main
 
-import "fmt"
+import (
+  "fmt"
+  "time"
+)
 
 func main() {
-  go sayHello("Hello")
-  sayHello("World")
+  go function()
+  go func() {
+    for i:=10; i <= 20; i++ {
+      fmt.Print(i, " ")
+    }
+  }()
+
+  time.Sleep(time.Second * 2)
+  fmt.Println("Done...!")
+
 }
 
-func sayHello(s string)  {
-  for i := 0; i < 5; i++ {
-    fmt.Println(i, s)
+func function()  {
+  for i := 0; i < 10; i++ {
+    fmt.Print(i)
   }
 }
