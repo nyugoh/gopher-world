@@ -1,7 +1,7 @@
 package main
 
 import (
-	"chat"
+	"github.com/nyugoh/gopher-world/RPC/chat"
 	"google.golang.org/grpc"
 	"log"
 	"net"

@@ -1,4 +1,4 @@
-module chat
+module github.com/nyugoh/gopher-world/RPC/chat
 
 go 1.14
 
