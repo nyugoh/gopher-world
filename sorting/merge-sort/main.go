@@ -2,64 +2,69 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
+	"time"
 )
 
-func print(arr []int) {
-	for _, val := range arr {
-		fmt.Print(val, " ")
+func mergeSort(items []int) []int {
+	if len(items) < 2 {
+		return items
 	}
-	fmt.Println()
+	mid := len(items)/2
+	leftSide := mergeSort(items[:mid])
+	rightSide := mergeSort(items[mid:])
+	return merge(leftSide, rightSide)
 }
 
-func merge(arr, tempArr []int, low, mid, high int) {
-	fmt.Println("Merge...")
-	tempIndex := low
-	size := (high - low) + 1
-	highStart := mid + 1
-	for low <= mid && highStart <= high {
-		fmt.Println("Low:", low, "Mid:", mid, "High", high)
-		if arr[low] <= arr[highStart] {
-			tempArr[tempIndex] = arr[low]
-			tempIndex++
-			low++
-		}
-		if arr[low] > arr[highStart] {
-			tempArr[tempIndex] = arr[highStart]
-			tempIndex++
-			highStart++
+func merge(a []int, b []int) []int {
+	c := make([]int, len(a)+len(b))
+	i , j := 0, 0
+	for i < len(a) && j < len(b) {
+		if a[i] <= b[j] {
+			c = append(c, a[i])
+			i++
+		} else {
+			c = append(a, b[j])
+			j++
 		}
 	}
-	for low <= mid {
-		tempArr[tempIndex] = arr[low]
-		tempIndex++
-		low++
+
+	// Append remaining elements in a & b
+	for i < len(a) {
+		c = append(c, a[i])
+		i++
 	}
-	for highStart <= high {
-		tempArr[tempIndex] = arr[highStart]
-		tempIndex++
-		highStart++
+
+	for j < len(b) {
+		c = append(c, b[j])
+		j++
 	}
-	for j := 0; j < size; j++ {
-		arr[high] = tempArr[high]
-		high--
-	}
+	return c
 }
 
-func mergeSort(arr, tempArr []int, low, high int) {
-	if low < high {
-		mid := low + (high-low)/2
-		fmt.Println("Mid:", mid)
-		mergeSort(arr, tempArr, low, mid)
-		mergeSort(arr, tempArr, mid+1, high)
-		merge(arr, tempArr, low, mid, high)
+// don't modify below this line
+
+func main() {
+	start := time.Now()
+	o1 := mergeSort(getValues(10))
+	o2 := mergeSort(getValues(100))
+	mergeSort(getValues(1000))
+	mergeSort(getValues(10000))
+	mergeSort(getValues(100000))
+	if time.Since(start) < time.Second*3 {
+		fmt.Println("Fast :)")
+	} else {
+		fmt.Println("Slow :(")
 	}
-	return
+	fmt.Println(o1)
+	fmt.Println(o2)
 }
 
-func main1() {
-	arr := []int{10, 20, 3, 4, 1, 23, 8, 0}
-	tempArr := []int{0,0, 0, 0,0 ,0 ,0,0}
-	print(arr)
-	mergeSort(arr, tempArr, 0, len(arr)-1)
-	print(arr)
+func getValues(num int) []int {
+	rand.Seed(0)
+	nums := []int{}
+	for i := 0; i < num; i++ {
+		nums = append(nums, rand.Intn(num))
+	}
+	return nums
 }
