@@ -7,5 +7,3 @@ func CurrentDate() string {
 	test("Howdy")
 	return time.Now().String()
 }
-
-

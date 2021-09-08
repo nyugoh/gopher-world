@@ -7,7 +7,7 @@ import (
 )
 
 func Redirect(w http.ResponseWriter, r *http.Request) {
-	key:= r.URL.Path[1:]
+	key := r.URL.Path[1:]
 	fmt.Println("Key: ", r.URL.Path[1:])
 	if url := Store.Get(key); url != "" {
 		fmt.Printf("Redirect: %s ==> %s", r.URL.Path[1:], url)
@@ -29,7 +29,6 @@ func Add(w http.ResponseWriter, r *http.Request) {
 	key := Store.Put(url)
 	fmt.Fprintf(w, "http://localhost:8080/%s", key)
 }
-
 
 var addForm = `
 <html>

@@ -15,7 +15,7 @@ func main() {
 	}()
 
 	select {
-	case res:= <-c1:
+	case res := <-c1:
 		fmt.Println(res)
 	case <-time.After(time.Second * 2):
 		fmt.Println("c1 timeout after 2 seconds")
@@ -26,7 +26,7 @@ func main() {
 		c2 <- "c2 is okay"
 	}()
 	select {
-	case res:= <-c2:
+	case res := <-c2:
 		fmt.Println(res)
 	case <-time.After(time.Second * 3):
 		fmt.Println("c2 timeout after 4 seconds")

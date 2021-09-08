@@ -30,7 +30,7 @@ func ShowArticle(c *gin.Context) {
 	}
 }
 
-func getArticle(articleId int) ( *Article, error) {
+func getArticle(articleId int) (*Article, error) {
 
 	for _, article := range GetAllArticles() {
 		if article.Id == articleId {

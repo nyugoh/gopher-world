@@ -33,7 +33,7 @@ func main() {
 	r.LoadHTMLGlob("templates/*")
 
 	r.GET("/", IndexPage)
-	r.GET("/article/:id",ShowArticle)
+	r.GET("/article/:id", ShowArticle)
 
 	r.Run(":5000")
 }

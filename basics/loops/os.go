@@ -1,19 +1,20 @@
 package main
 
 import (
-  "fmt"
-  "runtime"
+	"fmt"
+	"runtime"
 )
+
 func main() {
-  fmt.Print("Go runs on ")
+	fmt.Print("Go runs on ")
 
-  switch os := runtime.GOOS; os {
-  case "darwin":
-    fmt.Println("OS X")
-  case "linux":
-    fmt.Println("Linux")
-  default:
-    fmt.Printf("")
+	switch os := runtime.GOOS; os {
+	case "darwin":
+		fmt.Println("OS X")
+	case "linux":
+		fmt.Println("Linux")
+	default:
+		fmt.Printf("")
 
-  }
+	}
 }

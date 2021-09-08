@@ -8,15 +8,15 @@ import (
 
 var waitGroup sync.WaitGroup
 
-func A(x, y chan struct{})  {
+func A(x, y chan struct{}) {
 	<-x
-	time.Sleep(time.Second*2)
+	time.Sleep(time.Second * 2)
 	fmt.Println("A()!")
 	waitGroup.Done()
 	close(y)
 }
 
-func B(x, y chan struct{})  {
+func B(x, y chan struct{}) {
 	<-x
 	time.Sleep(time.Second * 3)
 	fmt.Println("B()!")
@@ -24,9 +24,9 @@ func B(x, y chan struct{})  {
 	close(y)
 }
 
-func C(y chan struct{})  {
+func C(y chan struct{}) {
 	<-y
-	time.Sleep(time.Second*2)
+	time.Sleep(time.Second * 2)
 	fmt.Println("C()!")
 	waitGroup.Done()
 }
@@ -38,9 +38,9 @@ func main() {
 
 	waitGroup.Add(5)
 	go C(z)
-	go A(x,y)
+	go A(x, y)
 	go C(z)
-	go B(y,z)
+	go B(y, z)
 	go C(z)
 
 	close(x)

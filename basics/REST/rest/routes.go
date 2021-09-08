@@ -21,7 +21,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 }
 
 func LoggingMiddleware(handler http.Handler) http.Handler {
-	return http.HandlerFunc(func (w http.ResponseWriter, r *http.Request) {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("Start of the middleware.")
 		handler.ServeHTTP(w, r)
 		fmt.Println("End of the middleware.")
@@ -33,7 +33,7 @@ func AllPosts(w http.ResponseWriter, r *http.Request) {
 	db := CreateDBConnection()
 	limit := r.URL.Query().Get("limit")
 	fmt.Println(limit)
-	query := "SELECT id, title, description, meta, content, image_cover, created_at FROM posts "+ limit
+	query := "SELECT id, title, description, meta, content, image_cover, created_at FROM posts " + limit
 	rows, err := db.Query(query)
 	defer rows.Close()
 	if err != nil {

@@ -12,7 +12,7 @@ func main() {
 	fmt.Printf("Reading :%d\n", <-c)
 	time.Sleep(time.Second)
 
-	_, ok := <- c
+	_, ok := <-c
 	if ok {
 		fmt.Println("Channel is open.")
 	} else {
@@ -22,7 +22,7 @@ func main() {
 
 }
 
-func writeToChannel(c chan int, x int)  {
+func writeToChannel(c chan int, x int) {
 	fmt.Println("1", x)
 	c <- x
 	close(c)

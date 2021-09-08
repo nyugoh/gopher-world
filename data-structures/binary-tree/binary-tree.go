@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 type Tree struct {
-	left *Tree
-	data int
+	left  *Tree
+	data  int
 	right *Tree
 }
 
@@ -12,7 +12,7 @@ type Tree struct {
 func insert(root *Tree, data int) *Tree {
 	// Check if root is null, make this node new root and return it
 	if root == nil {
-		 return &Tree{
+		return &Tree{
 			left:  nil,
 			data:  data,
 			right: nil,
@@ -35,7 +35,7 @@ func insert(root *Tree, data int) *Tree {
 	return root
 }
 
-func inorder(root *Tree)  {
+func inorder(root *Tree) {
 	if root != nil {
 		inorder(root.left)
 		fmt.Print(root.data, " ")
@@ -43,7 +43,7 @@ func inorder(root *Tree)  {
 	}
 }
 
-func preorder(root *Tree)  {
+func preorder(root *Tree) {
 	if root != nil {
 		fmt.Print(root.data, " ")
 		preorder(root.left)
@@ -51,7 +51,7 @@ func preorder(root *Tree)  {
 	}
 }
 
-func postorder(root *Tree)  {
+func postorder(root *Tree) {
 	if root != nil {
 		postorder(root.left)
 		postorder(root.right)

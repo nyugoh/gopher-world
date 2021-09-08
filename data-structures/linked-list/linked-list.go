@@ -7,7 +7,7 @@ type Node struct {
 	data int
 }
 
-func insertEnd(head *Node, data int) *Node  {
+func insertEnd(head *Node, data int) *Node {
 	if head == nil {
 		return &Node{
 			next: nil,
@@ -25,8 +25,8 @@ func insertEnd(head *Node, data int) *Node  {
 	return head
 }
 
-func traverse(head *Node)  {
-	if head !=nil {
+func traverse(head *Node) {
+	if head != nil {
 		fmt.Print(head.data, " -->")
 		traverse(head.next)
 	}

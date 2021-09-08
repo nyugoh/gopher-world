@@ -8,7 +8,7 @@ func main() {
 
 	go func() {
 		for {
-			job, more := <- jobs
+			job, more := <-jobs
 			if more {
 				fmt.Println("Received job ::", job)
 			} else {
@@ -19,11 +19,11 @@ func main() {
 		}
 	}()
 
-	for i:=0; i< 5; i++ {
+	for i := 0; i < 5; i++ {
 		fmt.Println("Sent a task ::", i)
 		jobs <- i
 	}
 	close(jobs)
 	fmt.Println("Sent all task your way.")
-	<- done
+	<-done
 }

@@ -13,9 +13,9 @@ func TestGetAllArticles(t *testing.T) {
 		{
 			name: "t1",
 			wantArts: []Article{
-				{Id: "1", Title: "Article 1", Content: "Content 1",},
-				{Id: "2", Title: "Article 2", Content: "Content 2",},
-				{Id: "3", Title: "Article 3", Content: "Content 3",},
+				{Id: "1", Title: "Article 1", Content: "Content 1"},
+				{Id: "2", Title: "Article 2", Content: "Content 2"},
+				{Id: "3", Title: "Article 3", Content: "Content 3"},
 			},
 		},
 	}

@@ -11,12 +11,12 @@ import (
 var CLOSEA = false
 var DATA = make(map[int]bool)
 
-func randon(min int, max int) int  {
-	return rand.Intn(max-min)+min
+func randon(min int, max int) int {
+	return rand.Intn(max-min) + min
 }
 
 // Should generate random no and send them thru a channel
-func first(min int, max int, out chan <- int)  {
+func first(min int, max int, out chan<- int) {
 	for {
 		if CLOSEA {
 			close(out)
@@ -28,7 +28,7 @@ func first(min int, max int, out chan <- int)  {
 }
 
 // Reads data from channel A and checks if it has been generated before, if not, sends it to last function
-func second(in <-chan int, out chan<- int)  {
+func second(in <-chan int, out chan<- int) {
 	for x := range in {
 		fmt.Printf("%d ", x)
 		_, ok := DATA[x]
@@ -48,7 +48,7 @@ func second(in <-chan int, out chan<- int)  {
 }
 
 // Reads from channel B and sums up all the values
-func third(in <-chan int)  {
+func third(in <-chan int) {
 	var sum int
 	sum = 0
 	for val := range in {

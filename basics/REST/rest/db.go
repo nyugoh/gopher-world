@@ -20,7 +20,7 @@ var (
 		"deleted_at DATETIME," +
 		"PRIMARY KEY(id)," +
 		"UNIQUE(title)" +
-	")"
+		")"
 )
 
 func CreateTable() {
@@ -46,4 +46,3 @@ func CreateDBConnection() *sql.DB {
 	}
 	return db
 }
-

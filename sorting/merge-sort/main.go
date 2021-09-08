@@ -10,7 +10,7 @@ func mergeSort(items []int) []int {
 	if len(items) < 2 {
 		return items
 	}
-	mid := len(items)/2
+	mid := len(items) / 2
 	leftSide := mergeSort(items[:mid])
 	rightSide := mergeSort(items[mid:])
 	return merge(leftSide, rightSide)
@@ -18,7 +18,7 @@ func mergeSort(items []int) []int {
 
 func merge(a []int, b []int) []int {
 	c := make([]int, len(a)+len(b))
-	i , j := 0, 0
+	i, j := 0, 0
 	for i < len(a) && j < len(b) {
 		if a[i] <= b[j] {
 			c = append(c, a[i])

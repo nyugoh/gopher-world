@@ -10,8 +10,8 @@ func main() {
 	minusO := flag.Int("O", 0, "O flag, default start value")
 	flag.Parse()
 
-	*minusO ++
-	*minusO ++
+	*minusO++
+	*minusO++
 	fmt.Println("-K:", *minusK)
 	fmt.Println("-O: ", *minusO)
 }

@@ -8,7 +8,7 @@ import (
 
 type UrlStore struct {
 	urls map[string]string
-	mu sync.RWMutex
+	mu   sync.RWMutex
 }
 
 var Store *UrlStore

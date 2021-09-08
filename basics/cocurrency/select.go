@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-func gen(min int, max int, createNo chan int, end chan bool)  {
+func gen(min int, max int, createNo chan int, end chan bool) {
 	for {
 		select {
 		case createNo <- rand.Intn(max-min) + min:
@@ -36,11 +36,11 @@ func main() {
 
 	go gen(0, 2*n, createChan, end)
 
-	for i:=0; i<n;i++ {
+	for i := 0; i < n; i++ {
 		fmt.Printf("%d ", <-createChan)
 	}
 
 	time.Sleep(time.Second * 5)
 	fmt.Println("Exiting...")
-	end<-true
+	end <- true
 }

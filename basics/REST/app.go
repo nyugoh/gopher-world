@@ -18,6 +18,5 @@ func main() {
 	postsRouter.HandleFunc("", rest.AllPosts).Methods("GET")
 	postsRouter.HandleFunc("", rest.AddPost).Methods("POST")
 
-
 	log.Fatal(http.ListenAndServe(":8000", r))
 }

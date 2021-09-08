@@ -6,7 +6,7 @@ import (
 	"sync"
 )
 
-func main()  {
+func main() {
 	n := flag.Int("n", 20, "No. of goroutines to create")
 	flag.Parse()
 
@@ -17,7 +17,7 @@ func main()  {
 	var waitGroup sync.WaitGroup
 	fmt.Printf("\n%#v\n", waitGroup)
 
-	for i:=1; i <= count; i++ {
+	for i := 1; i <= count; i++ {
 		waitGroup.Add(1)
 		go func(x int) {
 			defer waitGroup.Done()

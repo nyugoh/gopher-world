@@ -1,12 +1,12 @@
 package main
 
 import (
-	"net/url"
-	"log"
 	"fmt"
+	"log"
+	"net/url"
 )
 
-func main()  {
+func main() {
 	urlString := "https://joe:1234@google.com/search?q=dotnet&version=2.34#introduction"
 	parsedUrl, err := url.Parse(urlString)
 

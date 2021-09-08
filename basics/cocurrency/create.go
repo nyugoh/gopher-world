@@ -14,7 +14,7 @@ func main() {
 
 	fmt.Printf("Creating %d goroutines...\n", count)
 
-	for i:=1; i <= count ;i++ {
+	for i := 1; i <= count; i++ {
 		go func(x int) {
 			fmt.Printf("%d ", x)
 		}(i)

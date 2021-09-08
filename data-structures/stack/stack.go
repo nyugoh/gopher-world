@@ -19,7 +19,7 @@ func pop(stack **Node) {
 }
 
 // Returns the item at the top
-func top(stack *Node) (int, bool)  {
+func top(stack *Node) (int, bool) {
 	// return element at the head of the list
 	if stack == nil {
 		fmt.Println("Stack is empty")
@@ -29,7 +29,7 @@ func top(stack *Node) (int, bool)  {
 }
 
 // Add an element at the top of the stack
-func push(head **Node, data int)  {
+func push(head **Node, data int) {
 	// add element at the front
 	newNode := &Node{data: data, next: nil}
 
@@ -42,7 +42,7 @@ func push(head **Node, data int)  {
 }
 
 // Print stack content
-func traverse(stack *Node)  {
+func traverse(stack *Node) {
 	tempNode := stack
 	for tempNode != nil {
 		fmt.Print(tempNode.data, " ")

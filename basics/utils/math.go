@@ -10,7 +10,7 @@ func Average(xs []float64) (avg float64) {
 	for _, x := range xs {
 		avg += x
 	}
-	avg = avg/ float64(len(xs))
+	avg = avg / float64(len(xs))
 	return
 }
 

@@ -25,7 +25,7 @@ func dequeue(queue *Queue) (int, bool) {
 }
 
 // Add an element to the queue
-func enqueue(queue Queue, data int)  {
+func enqueue(queue Queue, data int) {
 	// element is added at the end of list
 	newNode := &Node{
 		data: data,
@@ -51,7 +51,7 @@ func top(queue Queue) (int, bool) {
 	return queue.head.data, false
 }
 
-func printQueue(queue Queue)  {
+func printQueue(queue Queue) {
 	tempNode := queue.head
 	for tempNode != nil {
 		fmt.Print(tempNode.data, ", ")

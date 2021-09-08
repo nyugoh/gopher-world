@@ -18,7 +18,7 @@ func quickSort(a []int, low, high int) []int {
 func partition(a []int, low, high int) int {
 	pivot := a[high]
 	i := low
-	for j := low; j < high ; j++ {
+	for j := low; j < high; j++ {
 		if a[j] < pivot {
 			a[i], a[j] = a[j], a[i]
 			i++
