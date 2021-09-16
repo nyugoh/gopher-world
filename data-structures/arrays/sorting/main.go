@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func isSorted(a []int, n int) bool {
-	if n == 1{
+	if n == 1 {
 		return true
 	}
 	if a[n-1] < a[n-2] {

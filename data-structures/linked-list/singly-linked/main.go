@@ -4,7 +4,7 @@ import "fmt"
 
 type LinkedList struct {
 	Data int
-	Next * LinkedList
+	Next *LinkedList
 }
 
 func CountLength(head *LinkedList) (length int) {

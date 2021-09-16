@@ -41,7 +41,7 @@ func solution2(head *Node, position int) (nthNode *Node) {
 		currNode = currNode.Next
 	}
 	if len(items) >= position {
-		nthNode = items[(len(items) - position)+1]
+		nthNode = items[(len(items)-position)+1]
 	}
 	return
 }

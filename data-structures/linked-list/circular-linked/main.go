@@ -13,7 +13,7 @@ func Traverse(head *CllNode) {
 		fmt.Println("List is empty")
 		return
 	}
-	for b := true; b ; b = currNode != head {
+	for b := true; b; b = currNode != head {
 		fmt.Print(currNode.Data)
 		if currNode.Next != nil {
 			fmt.Print(" -> ")
@@ -31,7 +31,7 @@ func CountLength(head *CllNode) (length int) {
 	if currNode.Next == currNode {
 		return 1
 	}
-	for b := true; b ; b = currNode != head {
+	for b := true; b; b = currNode != head {
 		length += 1
 		currNode = currNode.Next
 	}
@@ -50,7 +50,7 @@ func AddNodeAtFront(head **CllNode, data int) {
 		return
 	}
 	currNode := *head
-	for b := true; b ; b = currNode.Next != *head {
+	for b := true; b; b = currNode.Next != *head {
 		currNode = currNode.Next
 	}
 	newNode.Next = *head
@@ -67,7 +67,7 @@ func AddNodeAtEnd(head **CllNode, data int) {
 		return
 	}
 	currNode := *head
-	for b := true; b ; b = currNode.Next != *head {
+	for b := true; b; b = currNode.Next != *head {
 		currNode = currNode.Next
 	}
 	newNode.Next = *head
@@ -85,7 +85,7 @@ func DeleteAtLastNode(head **CllNode) {
 		return
 	}
 	prevNode, currNode := *head, *head
-	for b:=true; b ; b = currNode.Next != *head {
+	for b := true; b; b = currNode.Next != *head {
 		prevNode = currNode
 		currNode = currNode.Next
 	}
@@ -107,7 +107,7 @@ func DeleteFirstNode(head **CllNode) {
 		return
 	}
 	currNode := *head
-	for b := true; b ; b = currNode.Next != *head {
+	for b := true; b; b = currNode.Next != *head {
 		currNode = currNode.Next
 	}
 	currNode.Next = (*head).Next

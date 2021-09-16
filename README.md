@@ -1,4 +1,4 @@
-# Gopher world :panda_face: :squirrel:
+# Gopher world
 
 - [Apps](apps/)
   - [x] [CLI Shopping cart](apps/shopping-cli) :heavy_check_mark:

@@ -52,7 +52,7 @@ func InsertNode(head **DllNode, data, position int) {
 	}
 	currNode, prevNode, k := *head, *head, 1
 	for currNode != nil && k < position {
-		k ++
+		k++
 		prevNode = currNode
 		currNode = currNode.Next
 	}
