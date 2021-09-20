@@ -3,7 +3,7 @@ package stack
 import "fmt"
 
 type ListNode struct {
-	Data int
+	Data interface{}
 	Next *ListNode
 }
 
@@ -15,8 +15,8 @@ func (s *Stack) IsEmpty() bool {
 	return s.Head == nil
 }
 
-func (s *Stack) Push(data int) {
-	fmt.Println("Pushing ", data, "into stack")
+func (s *Stack) Push(data interface{}) {
+	//fmt.Println("Pushing ", data, "into stack")
 	newNode := &ListNode{data, nil}
 
 	if s.IsEmpty() {
@@ -29,18 +29,18 @@ func (s *Stack) Push(data int) {
 }
 
 func (s *Stack) Pop() {
-	fmt.Println("Poping stack")
+	//fmt.Println("Poping stack")
 	if s.IsEmpty() {
 		fmt.Println("Stack is empty")
 		return
 	}
-	tempNode := s.Head
+	//tempNode := s.Head
 	s.Head = s.Head.Next
-	fmt.Println("Poped", tempNode.Data)
-	tempNode = nil
+	//tempNode.Data
+	//tempNode = nil
 }
 
-func (s *Stack) Top() (data int) {
+func (s *Stack) Top() (data interface{}) {
 	if s.IsEmpty() {
 		fmt.Println("Stack is empty")
 		return data

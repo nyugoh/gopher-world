@@ -3,7 +3,7 @@ package queue
 import "fmt"
 
 type ListNode struct {
-	Data int
+	Data interface{}
 	Next *ListNode
 }
 
@@ -24,7 +24,7 @@ func (q *Queue) IsEmpty() bool {
 	return q.Front == nil
 }
 
-func (q *Queue) Enqueue(data int) {
+func (q *Queue) Enqueue(data interface{}) {
 	newNode := &ListNode{data, nil}
 
 	if q.Rear != nil {
@@ -36,8 +36,8 @@ func (q *Queue) Enqueue(data int) {
 	}
 }
 
-func (q *Queue) Dequeue() int {
-	var data int
+func (q *Queue) Dequeue() interface{} {
+	var data interface{}
 	if q.IsEmpty() {
 		return data
 	}
