@@ -196,7 +196,7 @@ func buildBST(a []int, j, k int) *binaryTree.BinaryTree {
 
 // The insert function used below creates a binary search tree
 func main() {
-	t := &binaryTree.BinaryTree{10, nil, nil}
+	t := &binaryTree.BinaryTree{Data: 10}
 	t.Insert(t, 5)
 	t.Insert(t, 15)
 	t.Insert(t, 3)
