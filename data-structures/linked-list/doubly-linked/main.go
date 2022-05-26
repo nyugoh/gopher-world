@@ -17,7 +17,7 @@ func CountLength(head *DllNode) (length int) {
 	return
 }
 
-func TraverseList(head *DllNode) {
+func TraverseForward(head *DllNode) {
 	if head == nil {
 		fmt.Println("List is empty")
 		return
@@ -41,7 +41,7 @@ func InsertNode(head **DllNode, data, position int) {
 	newNode := DllNode{
 		Data: data,
 	}
-	if position == 0 || position == 1 || *head == nil {
+	if position == 1 || *head == nil {
 		newNode.Next = *head
 		newNode.Prev = nil
 		if *head != nil {
@@ -104,14 +104,14 @@ func main() {
 	}
 
 	fmt.Println("Length::", CountLength(head))
-	TraverseList(head)
+	TraverseForward(head)
 	DeleteNode(&head, 1)
-	TraverseList(head)
+	TraverseForward(head)
 
 	InsertNode(&head, 0, 1)
 	InsertNode(&head, 4, CountLength(head)+1)
 	InsertNode(&head, 5, CountLength(head)+3)
 
 	fmt.Println("Length::", CountLength(head))
-	TraverseList(head)
+	TraverseForward(head)
 }

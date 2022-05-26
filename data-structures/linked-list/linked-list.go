@@ -27,7 +27,7 @@ func insertEnd(head *Node, data int) *Node {
 
 func traverse(head *Node) {
 	if head != nil {
-		fmt.Print(head.data, " -->")
+		fmt.Print(head.data, " --> ")
 		traverse(head.next)
 	}
 }
